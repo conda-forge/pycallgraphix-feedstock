@@ -31,7 +31,7 @@ test:
     - pycallgraphix
   commands:
     - pip check
-    - pytest
+    - pytest test/
   requires:
     - pip
     - python {{ python_min }}
