@@ -29,8 +29,11 @@ requirements:
 test:
   imports:
     - pycallgraphix
+  source_files:
+    - .
   commands:
     - pip check
+    - ls
     - pytest test/
   requires:
     - pip
