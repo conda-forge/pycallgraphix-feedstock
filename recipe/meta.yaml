@@ -1,3 +1,4 @@
+{% set python_min = "3.7" %}
 {% set name = "pycallgraphix" %}
 {% set version = "1.0.2" %}
 
@@ -30,9 +31,11 @@ test:
     - pycallgraphix
   commands:
     - pip check
+    - pytest
   requires:
     - pip
     - python {{ python_min }}
+    - pytest
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/pycallgraphix
